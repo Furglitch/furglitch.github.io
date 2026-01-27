@@ -45,7 +45,8 @@ exclude:
   - .rspec
 
 # Set a path/url to a logo that will be displayed instead of the title
-#logo: "/assets/images/just-the-docs.png"
+logo: "/assets/images/custom/icons/furglitch_logo_square.svg"
+favicon_ico: "/assets/images/custom/icons/furglitch_logo_square.ico"
 
 # Enable or disable the site search
 # Supports true (default) or false
