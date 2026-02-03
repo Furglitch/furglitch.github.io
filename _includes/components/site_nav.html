@@ -11,6 +11,20 @@
 {%- endcomment -%}
 
 <nav aria-label="Main" id="site-nav" class="site-nav">
+  {%- comment -%} Add Home link for subwikis {%- endcomment -%}
+  {% if site.baseurl != "" and site.baseurl != "/" %}
+  <ul class="nav-list">
+    <li class="nav-list-item">
+      <a href="{{ site.url }}/" class="nav-list-link">
+        <svg viewBox="0 0 24 24" style="width: 1em; height: 1em; vertical-align: text-bottom; margin-right: 0.25em;">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="currentColor"/>
+        </svg>
+        Home
+      </a>
+    </li>
+  </ul>
+  <ul class="nav-list"><li></li></ul>
+  {% endif %}
   {% assign pages_top_size = site.html_pages
         | where_exp:"item", "item.title != nil"
         | where_exp:"item", "item.parent == nil"
