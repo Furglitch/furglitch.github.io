@@ -1,1 +1,8 @@
-// custom SCSS (or CSS) goes here
+// Fix link color for custom projects navigation
+.site-nav a.nav-list-link {
+  color: $link-color !important;
+}
+
+.site-nav .nav-list .nav-list a.nav-list-link {
+  color: $link-color !important;
+}

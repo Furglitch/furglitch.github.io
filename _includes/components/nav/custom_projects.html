@@ -1,0 +1,65 @@
+<nav aria-label="Other Projects" class="site-nav">
+  <ul class="nav-list">
+    <li class="nav-list-item">
+      <a href="#" class="nav-list-expander">
+        <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+      </a>
+      <div class="nav-list-link">{{ site.data.nav.projects.title }}</div>
+      
+      <ul class="nav-list">
+      {% for group in site.data.nav.projects.groups %}
+        <li class="nav-list-item active">
+          {% if group.items %}
+          <a href="#" class="nav-list-expander" aria-label="toggle {{ group.title }}">
+            <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+          </a>
+          {% endif %}
+          {% if group.url %}
+            <a href="{{ group.url | relative_url }}" class="nav-list-link">{{ group.title }}</a>
+          {% else %}
+            <div class="nav-list-link">{{ group.title }}</div>
+          {% endif %}
+          
+          {% if group.items %}
+          <ul class="nav-list active">
+            {% for item in group.items %}
+              {% if item.items %}
+                <li class="nav-list-item active">
+                  <a href="#" class="nav-list-expander">
+                    <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
+                  </a>
+                  {% if item.url %}
+                    <a href="{{ item.url | relative_url }}" class="nav-list-link">{{ item.title }}</a>
+                  {% else %}
+                    <div class="nav-list-link">{{ item.title }}</div>
+                  {% endif %}
+                  <ul class="nav-list active">
+                    {% for subitem in item.items %}
+                    <li class="nav-list-item">
+                      {% if subitem.url %}
+                        <a href="{{ subitem.url | relative_url }}" class="nav-list-link">{{ subitem.title }}</a>
+                      {% else %}
+                        <div class="nav-list-link">{{ subitem.title }}</div>
+                      {% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                <li class="nav-list-item">
+                  {% if item.url %}
+                    <a href="{{ item.url | relative_url }}" class="nav-list-link">{{ item.title }}</a>
+                  {% else %}
+                    <div class="nav-list-link">{{ item.title }}</div>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>
