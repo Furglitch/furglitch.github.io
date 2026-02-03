@@ -1,0 +1,7 @@
+title: TITLE
+remote_theme: furglitch/furglitch.github.io
+repository: USER/REPO
+baseurl: ""
+
+plugins:
+  - jekyll-remote-theme

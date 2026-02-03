@@ -1,0 +1,1 @@
+This `.docs` folder contains a template for using this repo as a remote theme. Ignore this README when using the template.
