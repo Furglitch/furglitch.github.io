@@ -44,3 +44,11 @@ $code-background-color: $surface0;
 $feedback-color: $overlay0;
 $table-background-color: $mantle;
 $btn-primary-color: $blue;
+
+.site-nav a.nav-list-link {
+  color: $link-color !important;
+}
+
+.site-nav .nav-list .nav-list a.nav-list-link {
+  color: $link-color !important;
+}
