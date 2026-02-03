@@ -25,8 +25,8 @@
             <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
           </a>
           {% endif %}
-          {% if group.url %}
-            <a href="{{ group.url | absolute_url }}" class="nav-list-link">{{ group.title }}</a>
+          {% if group.repo %}
+            <a href="{{ site.url }}/{{ group.repo }}/" class="nav-list-link">{{ group.title }}</a>
           {% else %}
             <div class="nav-list-link">{{ group.title }}</div>
           {% endif %}
@@ -39,16 +39,16 @@
                   <a href="#" class="nav-list-expander">
                     <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
                   </a>
-                  {% if item.url %}
-                    <a href="{{ item.url | absolute_url }}" class="nav-list-link">{{ item.title }}</a>
+                  {% if item.repo %}
+                    <a href="{{ site.url }}/{{ item.repo }}/" class="nav-list-link">{{ item.title }}</a>
                   {% else %}
                     <div class="nav-list-link">{{ item.title }}</div>
                   {% endif %}
                   <ul class="nav-list active">
                     {% for subitem in item.items %}
                     <li class="nav-list-item">
-                      {% if subitem.url %}
-                        <a href="{{ subitem.url | absolute_url }}" class="nav-list-link">{{ subitem.title }}</a>
+                      {% if subitem.repo %}
+                        <a href="{{ site.url }}/{{ subitem.repo }}/" class="nav-list-link">{{ subitem.title }}</a>
                       {% else %}
                         <div class="nav-list-link">{{ subitem.title }}</div>
                       {% endif %}
@@ -58,8 +58,8 @@
                 </li>
               {% else %}
                 <li class="nav-list-item">
-                  {% if item.url %}
-                    <a href="{{ item.url | absolute_url }}" class="nav-list-link">{{ item.title }}</a>
+                  {% if item.repo %}
+                    <a href="{{ site.url }}/{{ item.repo }}/" class="nav-list-link">{{ item.title }}</a>
                   {% else %}
                     <div class="nav-list-link">{{ item.title }}</div>
                   {% endif %}

@@ -5,40 +5,40 @@ groups:
   - title: "Mod Organizer 2 (MO2)"
     items:
       - title: "Mod Organizer 2 Linux Installer (MO2-LINT)"
-        url: "/modorganizer2-linux-installer/"
+        repo: "modorganizer2-linux-installer"
       - title: "MO2 Nexus Collection Downloader"
-        url: "/modorganizer2-nxm-collection-dl/"
+        repo: "modorganizer2-nxm-collection-dl"
       - title: "MO2 Separator Generator"
-        url: "/modorganizer2-separator-generator/"
+        repo: "modorganizer2-separator-generator"
 
   - title: "Minecraft"
     items:
       # - title: "CraftPack"
-      #   url: "/mc-craftpack/"
+      #   repo: "mc-craftpack"
 
       - title: "Mods"
         items:
           - title: "Vending Block: Restocked"
-            url: "/vending-block/"
+            repo: "vending-block"
 
       - title: "Modpacks"
         items:
           - title: "KenkuKraft: Infected"
-            url: "/packwiz-kenkukraft/" # To Be Changed: "/mc-modpack-kenkukraft-infected/"
+            repo: "packwiz-kenkukraft" # To Be Changed: "mc-modpack-kenkukraft-infected"
 
       - title: "Resource Packs"
-        url: "/mc-resourcepack/"
+        repo: "mc-resourcepack"
 
       - title: "Repo Templates"
         items:
           - title: "Modpack Template"
-            url: "/mc-modpack-template/"
+            repo: "mc-modpack-template"
           # - title: "Mod Template"
-          #   url: "/mc-mod-template/"
+          #   repo: "mc-mod-template"
 
   - title: "Homelab"
     items:
       - title: "Docker Stack"
-        url: "/docker-stack/"
+        repo: "docker-stack"
       - title: "Dotfiles"
-        url: "/.dotfiles/"
+        repo: ".dotfiles"
