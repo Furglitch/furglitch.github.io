@@ -45,10 +45,53 @@ $feedback-color: $overlay0;
 $table-background-color: $mantle;
 $btn-primary-color: $blue;
 
+$code-background-color: $mantle;
+$code-linenumber-color: $surface2;
+
+/* Sidebar Navigation Links */
+
 .site-nav a.nav-list-link {
   color: $link-color !important;
 }
 
 .site-nav .nav-list .nav-list a.nav-list-link {
   color: $link-color !important;
+}
+
+/* Code Block Styling */
+
+.highlight,
+.highlight pre,
+.highlight code,
+.highlight pre code {
+  color: $subtext0 !important;
+}
+
+$token-groups: (
+  mauve: (k kc kd kn kp kr kt ow),                             // keywords + 'operator.word' (e.g. in, and, or)
+  green: (s sb sc sd s2 s1 se ss sh si sr sx sa),              // strings & interpolations
+  peach: (m mi mf mh mb mo il),                                // numbers / numeric literals (include 'il' variants)
+  teal: (n nd nv nn no na nb bp vc vg nx ne nl ni ns t text),  // names: variables, builtins, namespaces, attributes, plain text
+  blue: (nf nc fm nt),                                         // functions, class names, tag names (nt)
+  red: (er err),                                               // errors
+  subtext: (o p pf pi pj py dl)                                // operators / punctuation
+);
+
+$token-colors: (
+  mauve: $mauve,
+  green: $green,
+  peach: $peach,
+  teal: $teal,
+  blue: $blue,
+  red: $red,
+  subtext: $subtext1
+);
+
+@each $name, $classes in $token-groups {
+  $col: map-get($token-colors, $name);
+  @each $cls in $classes {
+    .highlight .#{$cls} {
+      color: $col !important;
+    }
+  }
 }
