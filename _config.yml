@@ -1,7 +1,7 @@
-title: Furglitch Wiki
+title: Furglitch Docs
 description: A Jekyll theme for documentation
 baseurl: ""
-url: "https://wiki.furglitch.com"
+url: "https://docs.furglitch.com"
 repository: furglitch/furglitch.github.io
 
 permalink: pretty

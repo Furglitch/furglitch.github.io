@@ -6,14 +6,14 @@ description: ""
 permalink: /
 ---
 
-# Welcome to the Furglitch Wiki
+# Welcome to Furglitch Docs
 
 
-This wiki serves as a centralized documentation hub for open-source projects maintained by Furglitch.
+This site serves as a centralized documentation hub for open-source projects created and maintained by Furglitch.
 Whether you're looking to mod games on Linux, set up Minecraft modpacks, or deploy containerized applications, you'll find guides and resources here.
 
 
-## About This Wiki
+## About the Documentation
 
 All projects documented here are open-source and available on [GitHub].
 The documentation covers installation guides, configuration instructions, troubleshooting tips, and contribution guidelines for each project.

@@ -1,11 +1,11 @@
-# wiki.furglitch.com
+# docs.furglitch.com
 
-This is the source code for the Furglitch Wiki, a documentation site for various projects I maintain.
+This is the source code for the Furglitch Docs, a documentation site for various projects I maintain.
 
 ## Projects Documented
 
 ### Mod Organizer 2
-- [ ] [modorganizer2-linux-installer](https://github.com/Furglitch/modorganizer2-linux-installer)
+- [X] [modorganizer2-linux-installer](https://github.com/Furglitch/modorganizer2-linux-installer)
 - [ ] [modorganizer2-separator-generator](https://github.com/Furglitch/modorganizer2-separator-generator)
 - [ ] [modorganizer2-nxm-collection-dl](https://github.com/Furglitch/modorganizer2-nxm-collection-dl)
 
