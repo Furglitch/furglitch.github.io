@@ -6,25 +6,25 @@ groups:
     items:
       - title: "Mod Organizer 2 Linux Installer (MO2-LINT)"
         repo: "modorganizer2-linux-installer"
-      - title: "MO2 Nexus Collection Downloader"
-        repo: "modorganizer2-nxm-collection-dl"
-      - title: "MO2 Separator Generator"
-        repo: "modorganizer2-separator-generator"
+      # - title: "MO2 Nexus Collection Downloader"
+      #   repo: "modorganizer2-nxm-collection-dl"
+      # - title: "MO2 Separator Generator"
+      #   repo: "modorganizer2-separator-generator"
 
   - title: "Minecraft"
     items:
       # - title: "CraftPack"
       #   repo: "mc-craftpack"
 
-      - title: "Mods"
-        items:
-          - title: "Vending Block: Restocked"
-            repo: "vending-block"
+      # - title: "Mods"
+      #   items:
+      #     - title: "Vending Block: Restocked"
+      #       repo: "vending-block"
 
-      - title: "Modpacks"
-        items:
-          - title: "KenkuKraft: Infected"
-            repo: "packwiz-kenkukraft" # To Be Changed: "mc-modpack-kenkukraft-infected"
+      # - title: "Modpacks"
+      #   items:
+      #     - title: "Mycelia"
+      #       repo: "mc-modpack-mycelia"
 
       - title: "Resource Packs"
         repo: "mc-resourcepack"
@@ -36,9 +36,9 @@ groups:
           # - title: "Mod Template"
           #   repo: "mc-mod-template"
 
-  - title: "Homelab"
-    items:
-      - title: "Docker Stack"
-        repo: "docker-stack"
-      - title: "Dotfiles"
-        repo: ".dotfiles"
+  # - title: "Homelab"
+  #   items:
+  #     - title: "Docker Stack"
+  #       repo: "docker-stack"
+  #     - title: "Dotfiles"
+  #       repo: ".dotfiles"
